@@ -9,12 +9,12 @@ Make Space Ltd. is a startup offering a co-working space to individuals, freelan
 
 They are looking for a scheduling system to effectively schedule meetings. Can you build such a system for Make Space Ltd.?
 
-Make Space Ltd. currently has 3 meeting rooms with varying capacity \
+Make Space Ltd. currently has 3 meeting rooms with varying capacity
 
-Name	Person Capacity \
-C-Cave	3 People \
-D-Tower	7 People \
-G-Mansion	20 People \
+Name	     Person Capacity \
+C-Cave	     3 People \
+D-Tower    	 7 People \
+G-Mansion	   20 People 
 
 Person Capacity - Maximum number of people the meeting room can accommodate.
 Buffer Time - Buffer time is the time used to clean up the meeting room. It happens at fixed times from 09:00 - 09:15, 13:15 - 13:45 and 18:45 - 19:00. During this time, no meeting rooms will be available to book.
