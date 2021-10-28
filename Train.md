@@ -1,5 +1,5 @@
 ## How to run the script
-python -m Tame_of_thrones <absolute_path_to_input_file> \
+python -m Train <absolute_path_to_input_file> \
 Here, <absolute_path_to_input_file> is the path of Input file 
 
 ## [Train](https://www.geektrust.in/coding-problem/backend/train)
@@ -22,23 +22,23 @@ The routes and distances of each train are as given. Station codes can be used f
 # Train A	
 ## STATION (CODE) - DISTANCE
 
-CHENNAI (CHN) - 0 \
+CHENNAI (CHN) - 0
 
-SALEM (SLM) - 350 \
+SALEM (SLM) - 350 
 
-BANGALORE (BLR) - 550 \
+BANGALORE (BLR) - 550 
 
-KURNOOL (KRN) - 900 \
+KURNOOL (KRN) - 900 
 
-HYDERABAD (HYB) - 1200 \
+HYDERABAD (HYB) - 1200 
 
-NAGPUR (NGP) - 1600 \
+NAGPUR (NGP) - 1600 
 
-ITARSI (ITJ) - 1900 \
+ITARSI (ITJ) - 1900 
 
-BHOPAL (BPL) - 2000 \
+BHOPAL (BPL) - 2000
 
-AGRA (AGA) - 2500 \
+AGRA (AGA) - 2500 
 
 NEW DELHI (NDL) - 2700
 
@@ -46,29 +46,29 @@ NEW DELHI (NDL) - 2700
 
 ## STATION (CODE) - DISTANCE
 
-TRIVANDRUM (TVC) -0 \
+TRIVANDRUM (TVC) -0 
 
-SHORANUR (SRR) - 300 \
+SHORANUR (SRR) - 300 
 
-MANGALORE (MAQ) - 600 \
+MANGALORE (MAQ) - 600 
 
-MADGAON (MAO) - 1000 \
+MADGAON (MAO) - 1000 
 
-PUNE (PNE) - 1400 \
+PUNE (PNE) - 1400 
 
-HYDERABAD (HYB) - 2000 \
+HYDERABAD (HYB) - 2000 
 
-NAGPUR (NGP) - 2400 \
+NAGPUR (NGP) - 2400 
 
-ITARSI (ITJ) - 2700 \
+ITARSI (ITJ) - 2700 
 
-BHOPAL (BPL) - 2800 \
+BHOPAL (BPL) - 2800 
 
-PATNA (PTA) - 3800 \
+PATNA (PTA) - 3800 
 
-NEW JALPAIGURI (NJP) - 4200 \
+NEW JALPAIGURI (NJP) - 4200 
 
-GUWAHATI (GHY) - 4700 \
+GUWAHATI (GHY) - 4700 
 
 
 Given initial bogie order of both trains your program should print the bogie order of arrival of each train at Hyderabad, Train AB’s departure bogie order from Hyderabad.
@@ -76,14 +76,14 @@ Given initial bogie order of both trains your program should print the bogie ord
 
 ## Your program should take as input:
 
-## 1. The order of bogies for train A while departing from Chennai.
-## 2. The order of bogies for train B while departing from Trivandrum.
+1. The order of bogies for train A while departing from Chennai.
+2. The order of bogies for train B while departing from Trivandrum.
 
 ## The output should be:
 
-## 1. The order of bogies for train A while arriving at Hyderabad.
-## 2. The order of bogies for train B while arriving at Hyderabad.
-## 3. The order of bogies for train AB (merged train) while departing from Hyderabad.
+1. The order of bogies for train A while arriving at Hyderabad.
+2. The order of bogies for train B while arriving at Hyderabad.
+3. The order of bogies for train AB (merged train) while departing from Hyderabad.
 
 
 # Input Commands
@@ -140,4 +140,3 @@ TRAIN_B ENGINE SRR MAO NJP PNE PTA
 ARRIVAL TRAIN_A ENGINE HYB NGP ITJ \
 ARRIVAL TRAIN_B ENGINE NJP PTA \
 DEPARTURE TRAIN_AB ENGINE ENGINE NJP PTA ITJ NGP
-
