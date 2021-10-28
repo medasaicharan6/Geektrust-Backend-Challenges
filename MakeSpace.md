@@ -1,8 +1,6 @@
-# This is one of the Backend coding challenges from geektrust.in website
-
 ## How to run the script
-python -m geektrust <absolute_path_to_input_file> \
-Here, <absolute_path_to_input_file> is the path of Input file
+python -m MakeSpace <absolute_path_to_input_file> \
+Here, <absolute_path_to_input_file> is the path of Input file 
 
 ## [Make Space](https://www.geektrust.in/coding-problem/backend/make-space)
 
