@@ -43,7 +43,7 @@ Buffer Time - Buffer time is the time used to clean up the meeting room. It happ
 
 The system will take two types of inputs:
 
-1. Book Meeting Room
+## 1. Book Meeting Room
 
 As a co-working space customer, I shall schedule a meeting by giving a time period and capacity requirement.
 Format - BOOK <start_time(inclusive)> <end_time(exclusive)> <person_capacity>
@@ -52,7 +52,7 @@ Possible Output:
 “<Meeting_Room_Name>” - If the booking is successful
 “NO_VACANT_ROOM” - If no room is vacant during the requested time period.
 
-2. View available meeting rooms
+## 2. View available meeting rooms
 
 As a co-working space customer, I would like to view a list of available meeting rooms by giving a time period. This should print the rooms in the ascending order of the room capacity. The rooms printed should be separated by a single space character.
 Format - VACANCY <start_time(inclusive)> <end_time(exclusive)>
@@ -60,14 +60,14 @@ Example - VACANCY 14:30 15:00
 Output: C-Cave G-Mansion
 
 
-##Input Constraints
+## Input Constraints
 
 1. Time will be in HH:MM (24 hours) format
 2. Time input should always consider the 15 minute time interval
 3. For all the time inputs end_time > start_time
 
 
-##SAMPLE INPUT 1
+## SAMPLE INPUT 1
 
 VACANCY 10:00 12:00
 BOOK 11:00 11:45 2	
@@ -83,7 +83,7 @@ VACANCY 15:45 16:00
 BOOK 16:00 17:00 5	
 VACANCY 18:00 19:00	
 
-##SAMPLE OUTPUT 1
+## SAMPLE OUTPUT 1
 
 C-Cave D-Tower G-Mansion
 C-Cave
@@ -100,7 +100,7 @@ G-Mansion
 NO_VACANT_ROOM
 
 
-##SAMPLE INPUT 2
+## SAMPLE INPUT 2
 
 BOOK 09:30 13:15 2
 BOOK 13:45 18:45 2
@@ -114,7 +114,7 @@ VACANCY 17:30 18:00
 BOOK 17:00 18:30 12
 BOOK 15:35 16:35 12
 
-##SAMPLE OUTPUT 2
+## SAMPLE OUTPUT 2
 
 C-Cave
 C-Cave
