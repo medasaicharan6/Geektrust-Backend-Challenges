@@ -20,7 +20,7 @@ Person Capacity - Maximum number of people the meeting room can accommodate.
 Buffer Time - Buffer time is the time used to clean up the meeting room. It happens at fixed times from 09:00 - 09:15, 13:15 - 13:45 and 18:45 - 19:00. During this time, no meeting rooms will be available to book.
 
 
-Rules
+## Rules
 
 1. Bookings can be made only in a single day from 00:00 to night 23:45. It cannot overlap across days. So you cannot book from 23:00 to 01:00, but can from 23:00 to 23:45.
 
@@ -39,7 +39,7 @@ Rules
 8. Time input should follow HH:MM format (24 hours format). If an incorrect time input is provided then INCORRECT_INPUT should be printed.
 
 
-Input Details
+# Input Details
 
 The system will take two types of inputs:
 
@@ -60,43 +60,71 @@ Example - VACANCY 14:30 15:00
 Output: C-Cave G-Mansion
 
 
-Input Constraints
+##Input Constraints
 
 1. Time will be in HH:MM (24 hours) format
 2. Time input should always consider the 15 minute time interval
 3. For all the time inputs end_time > start_time
 
 
-SAMPLE INPUT-OUTPUT 1
+##SAMPLE INPUT 1
 
-INPUT	OUTPUT
-VACANCY 10:00 12:00	C-Cave D-Tower G-Mansion
-BOOK 11:00 11:45 2	C-Cave
-BOOK 11:30 13:00 35	NO_VACANT_ROOM
-BOOK 11:30 13:00 15	G-Mansion
-VACANCY 11:30 12:00	D-Tower
-BOOK 14:00 15:30 3	C-Cave
-BOOK 15:00 16:30 2	D-Tower
-BOOK 15:15 12:15 12	INCORRECT_INPUT
-VACANCY 15:30 16:00	C-Cave G-Mansion
-BOOK 15:30 16:30 2	C-Cave
-VACANCY 15:45 16:00	G-Mansion
-BOOK 16:00 17:00 5	G-Mansion
-VACANCY 18:00 19:00	NO_VACANT_ROOM
+VACANCY 10:00 12:00
+BOOK 11:00 11:45 2	
+BOOK 11:30 13:00 35	
+BOOK 11:30 13:00 15	
+VACANCY 11:30 12:00	
+BOOK 14:00 15:30 3	
+BOOK 15:00 16:30 2	
+BOOK 15:15 12:15 12	
+VACANCY 15:30 16:00	
+BOOK 15:30 16:30 2	
+VACANCY 15:45 16:00	
+BOOK 16:00 17:00 5	
+VACANCY 18:00 19:00	
+
+##SAMPLE OUTPUT 1
+
+C-Cave D-Tower G-Mansion
+C-Cave
+NO_VACANT_ROOM
+G-Mansion
+D-Tower
+C-Cave
+D-Tower
+INCORRECT_INPUT
+C-Cave G-Mansion
+C-Cave
+G-Mansion
+G-Mansion
+NO_VACANT_ROOM
 
 
-SAMPLE INPUT-OUTPUT 2
+##SAMPLE INPUT 2
 
-INPUT	OUTPUT
-BOOK 09:30 13:15 2	C-Cave
-BOOK 13:45 18:45 2	C-Cave
-BOOK 12:55 14:00 3	INCORRECT_INPUT
-BOOK 13:45 17:15 6	D-Tower
-VACANCY 13:45 15:00	G-Mansion
-BOOK 14:00 15:00 2	G-Mansion
-BOOK 17:00 18:30 12	G-Mansion
-VACANCY 17:00 18:00	NO_VACANT_ROOM
-VACANCY 17:30 18:00	D-Tower
-BOOK 17:00 18:30 12	NO_VACANT_ROOM
-BOOK 15:35 16:35 12	INCORRECT_INPUT
+BOOK 09:30 13:15 2
+BOOK 13:45 18:45 2
+BOOK 12:55 14:00 3
+BOOK 13:45 17:15 6
+VACANCY 13:45 15:00	
+BOOK 14:00 15:00 2	
+BOOK 17:00 18:30 12
+VACANCY 17:00 18:00	
+VACANCY 17:30 18:00
+BOOK 17:00 18:30 12
+BOOK 15:35 16:35 12
+
+##SAMPLE OUTPUT 2
+
+C-Cave
+C-Cave
+INCORRECT_INPUT
+D-Tower
+VG-Mansion
+G-Mansion
+G-Mansion
+NO_VACANT_ROOM
+D-Tower
+NO_VACANT_ROOM
+INCORRECT_INPUT
 
