@@ -2,6 +2,7 @@
 
 ## How to run the script
 python -m geektrust <absolute_path_to_input_file>
+Here, <absolute_path_to_input_file> is the path of Input file
 
 ## [Make Space](https://www.geektrust.in/coding-problem/backend/make-space)
 
@@ -11,10 +12,10 @@ They are looking for a scheduling system to effectively schedule meetings. Can y
 
 Make Space Ltd. currently has 3 meeting rooms with varying capacity
 
-Name	     Person Capacity \
-C-Cave	     3 People \
-D-Tower    	 7 People \
-G-Mansion	   20 People 
+
+C-Cave - 3 People \
+D-Tower - 7 People \
+G-Mansion - 20 People 
 
 Person Capacity - Maximum number of people the meeting room can accommodate.
 Buffer Time - Buffer time is the time used to clean up the meeting room. It happens at fixed times from 09:00 - 09:15, 13:15 - 13:45 and 18:45 - 19:00. During this time, no meeting rooms will be available to book.
