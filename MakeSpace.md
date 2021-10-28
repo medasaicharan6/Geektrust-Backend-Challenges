@@ -9,12 +9,12 @@ Make Space Ltd. is a startup offering a co-working space to individuals, freelan
 
 They are looking for a scheduling system to effectively schedule meetings. Can you build such a system for Make Space Ltd.?
 
-Make Space Ltd. currently has 3 meeting rooms with varying capacity
+Make Space Ltd. currently has 3 meeting rooms with varying capacity\
 
-Name	Person Capacity
-C-Cave	3 People
-D-Tower	7 People
-G-Mansion	20 People
+Name	Person Capacity\
+C-Cave	3 People\
+D-Tower	7 People\
+G-Mansion	20 People\
 
 Person Capacity - Maximum number of people the meeting room can accommodate.
 Buffer Time - Buffer time is the time used to clean up the meeting room. It happens at fixed times from 09:00 - 09:15, 13:15 - 13:45 and 18:45 - 19:00. During this time, no meeting rooms will be available to book.
@@ -54,77 +54,77 @@ Possible Output:
 
 ## 2. View available meeting rooms
 
-As a co-working space customer, I would like to view a list of available meeting rooms by giving a time period. This should print the rooms in the ascending order of the room capacity. The rooms printed should be separated by a single space character.
-Format - VACANCY <start_time(inclusive)> <end_time(exclusive)>
-Example - VACANCY 14:30 15:00
-Output: C-Cave G-Mansion
+As a co-working space customer, I would like to view a list of available meeting rooms by giving a time period. This should print the rooms in the ascending order of the room capacity. The rooms printed should be separated by a single space character.\
+Format - VACANCY <start_time(inclusive)> <end_time(exclusive)>\
+Example - VACANCY 14:30 15:00\
+Output: C-Cave G-Mansion\
 
 
 ## Input Constraints
 
-1. Time will be in HH:MM (24 hours) format
-2. Time input should always consider the 15 minute time interval
-3. For all the time inputs end_time > start_time
+1. Time will be in HH:MM (24 hours) format\
+2. Time input should always consider the 15 minute time interval\
+3. For all the time inputs end_time > start_time\
 
 
 ## SAMPLE INPUT 1
 
-VACANCY 10:00 12:00
-BOOK 11:00 11:45 2	
-BOOK 11:30 13:00 35	
-BOOK 11:30 13:00 15	
-VACANCY 11:30 12:00	
-BOOK 14:00 15:30 3	
-BOOK 15:00 16:30 2	
-BOOK 15:15 12:15 12	
-VACANCY 15:30 16:00	
-BOOK 15:30 16:30 2	
-VACANCY 15:45 16:00	
-BOOK 16:00 17:00 5	
-VACANCY 18:00 19:00	
+VACANCY 10:00 12:00 \
+BOOK 11:00 11:45 2	\
+BOOK 11:30 13:00 35	\
+BOOK 11:30 13:00 15	\
+VACANCY 11:30 12:00	\
+BOOK 14:00 15:30 3	\
+BOOK 15:00 16:30 2	\
+BOOK 15:15 12:15 12	\
+VACANCY 15:30 16:00	\
+BOOK 15:30 16:30 2	\
+VACANCY 15:45 16:00	\
+BOOK 16:00 17:00 5	\
+VACANCY 18:00 19:00	\
 
 ## SAMPLE OUTPUT 1
 
-C-Cave D-Tower G-Mansion
-C-Cave
-NO_VACANT_ROOM
-G-Mansion
-D-Tower
-C-Cave
-D-Tower
-INCORRECT_INPUT
-C-Cave G-Mansion
-C-Cave
-G-Mansion
-G-Mansion
-NO_VACANT_ROOM
+C-Cave D-Tower G-Mansion \
+C-Cave\
+NO_VACANT_ROOM \
+G-Mansion \
+D-Tower \
+C-Cave \
+D-Tower \
+INCORRECT_INPUT \
+C-Cave G-Mansion \
+C-Cave \
+G-Mansion \
+G-Mansion \
+NO_VACANT_ROOM \
 
 
 ## SAMPLE INPUT 2
 
-BOOK 09:30 13:15 2
-BOOK 13:45 18:45 2
-BOOK 12:55 14:00 3
-BOOK 13:45 17:15 6
-VACANCY 13:45 15:00	
-BOOK 14:00 15:00 2	
-BOOK 17:00 18:30 12
-VACANCY 17:00 18:00	
-VACANCY 17:30 18:00
-BOOK 17:00 18:30 12
-BOOK 15:35 16:35 12
+BOOK 09:30 13:15 2 \
+BOOK 13:45 18:45 2 \
+BOOK 12:55 14:00 3 \
+BOOK 13:45 17:15 6 \
+VACANCY 13:45 15:00	\
+BOOK 14:00 15:00 2	\
+BOOK 17:00 18:30 12 \
+VACANCY 17:00 18:00	\
+VACANCY 17:30 18:00 \
+BOOK 17:00 18:30 12 \
+BOOK 15:35 16:35 12 \
 
 ## SAMPLE OUTPUT 2
 
-C-Cave
-C-Cave
-INCORRECT_INPUT
-D-Tower
-VG-Mansion
-G-Mansion
-G-Mansion
-NO_VACANT_ROOM
-D-Tower
-NO_VACANT_ROOM
-INCORRECT_INPUT
+C-Cave \
+C-Cave \
+INCORRECT_INPUT \
+D-Tower \
+VG-Mansion \
+G-Mansion \
+G-Mansion \
+NO_VACANT_ROOM \
+D-Tower \
+NO_VACANT_ROOM \
+INCORRECT_INPUT \
 
