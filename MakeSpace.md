@@ -9,12 +9,12 @@ Make Space Ltd. is a startup offering a co-working space to individuals, freelan
 
 They are looking for a scheduling system to effectively schedule meetings. Can you build such a system for Make Space Ltd.?
 
-Make Space Ltd. currently has 3 meeting rooms with varying capacity\
+Make Space Ltd. currently has 3 meeting rooms with varying capacity \
 
-Name	Person Capacity\
-C-Cave	3 People\
-D-Tower	7 People\
-G-Mansion	20 People\
+Name	Person Capacity \
+C-Cave	3 People \
+D-Tower	7 People \
+G-Mansion	20 People \
 
 Person Capacity - Maximum number of people the meeting room can accommodate.
 Buffer Time - Buffer time is the time used to clean up the meeting room. It happens at fixed times from 09:00 - 09:15, 13:15 - 13:45 and 18:45 - 19:00. During this time, no meeting rooms will be available to book.
@@ -45,26 +45,27 @@ The system will take two types of inputs:
 
 ## 1. Book Meeting Room
 
-As a co-working space customer, I shall schedule a meeting by giving a time period and capacity requirement.
-Format - BOOK <start_time(inclusive)> <end_time(exclusive)> <person_capacity>
-Example - BOOK 14:15 16:00 12
-Possible Output:
-“<Meeting_Room_Name>” - If the booking is successful
+As a co-working space customer, I shall schedule a meeting by giving a time period and capacity requirement. \
+Format - BOOK <start_time(inclusive)> <end_time(exclusive)> <person_capacity> \
+Example - BOOK 14:15 16:00 12 \
+Possible Output: \
+“<Meeting_Room_Name>” - If the booking is successful \
 “NO_VACANT_ROOM” - If no room is vacant during the requested time period.
 
 ## 2. View available meeting rooms
 
-As a co-working space customer, I would like to view a list of available meeting rooms by giving a time period. This should print the rooms in the ascending order of the room capacity. The rooms printed should be separated by a single space character.\
-Format - VACANCY <start_time(inclusive)> <end_time(exclusive)>\
-Example - VACANCY 14:30 15:00\
-Output: C-Cave G-Mansion\
+As a co-working space customer, I would like to view a list of available meeting rooms by giving a time period. This should print the rooms in the ascending order of the room capacity. The rooms printed should be separated by a single space character. \
+
+Format - VACANCY <start_time(inclusive)> <end_time(exclusive)> \
+Example - VACANCY 14:30 15:00 \
+Output: C-Cave G-Mansion
 
 
 ## Input Constraints
 
-1. Time will be in HH:MM (24 hours) format\
-2. Time input should always consider the 15 minute time interval\
-3. For all the time inputs end_time > start_time\
+1. Time will be in HH:MM (24 hours) format
+2. Time input should always consider the 15 minute time interval
+3. For all the time inputs end_time > start_time
 
 
 ## SAMPLE INPUT 1
@@ -81,7 +82,7 @@ VACANCY 15:30 16:00	\
 BOOK 15:30 16:30 2	\
 VACANCY 15:45 16:00	\
 BOOK 16:00 17:00 5	\
-VACANCY 18:00 19:00	\
+VACANCY 18:00 19:00
 
 ## SAMPLE OUTPUT 1
 
@@ -97,7 +98,7 @@ C-Cave G-Mansion \
 C-Cave \
 G-Mansion \
 G-Mansion \
-NO_VACANT_ROOM \
+NO_VACANT_ROOM
 
 
 ## SAMPLE INPUT 2
@@ -112,7 +113,7 @@ BOOK 17:00 18:30 12 \
 VACANCY 17:00 18:00	\
 VACANCY 17:30 18:00 \
 BOOK 17:00 18:30 12 \
-BOOK 15:35 16:35 12 \
+BOOK 15:35 16:35 12
 
 ## SAMPLE OUTPUT 2
 
@@ -126,5 +127,4 @@ G-Mansion \
 NO_VACANT_ROOM \
 D-Tower \
 NO_VACANT_ROOM \
-INCORRECT_INPUT \
-
+INCORRECT_INPUT
